@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Шпаргалка</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">item 1</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">item 1</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">item 1</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">item 1</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h1>Подсказки для вёрстки</h1>
+		<section class="info">
+			<div class="container">
+				<h2>Flexbox</h2>
+				<div class="info__inner">
+					<aside class="info__aside">
+						<div class="info__aside-inner">
+							<div class="info__aside-group">
+								<h4>Выравнивание по вертикали</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/align-items-start.html">align-items: flex-start;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/align-items-center.html"> align-items: center; </div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/align-items-end.html"> align-items: flex-end;</div>
+							</div>
+							<div class="info__aside-group">
+								<h4>Выравнивание по горизонтали</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/justify-content-start.html">justify-content: flex-start;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/justify-content-center.html"> justify-content: center; </div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/justify-content-end.html"> justify-content: flex-end;</div>
+							</div>
+						</div>
+					</aside>
+					<div class="info__inner-wrapper jsAjaxToggler">
+						<div class="info__inner-box">
+							<h3>display: flex; gap: 30px;</h3>
+							<div class="info__inner-items flex">
+								<div class="flex__item">1</div>
+								<div class="flex__item highest">2</div>
+								<div class="flex__item">3</div>
+								<div class="flex__item">4</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="container">
+				<h2>Flexbox направления</h2>
+				<div class="info__inner">
+					<aside class="info__aside">
+						<div class="info__aside-inner">
+							<div class="info__aside-group">
+								<h4>Направления</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/flex-direction-row.html">flex-direction: row;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/flex-direction-row-reverse.html">flex-direction: row-reverse;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/flex-direction-column.html"> flex-direction: column;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/flex-direction-column-reverse.html"> flex-direction: column-reverse;</div>
+							</div>
+						</div>
+					</aside>
+					<div class="info__inner-wrapper jsAjaxToggler">
+						<div class="info__inner-box">
+							<h3>display: flex; gap: 30px;</h3>
+							<div class="info__inner-items flex">
+								<div class="flex__item">1</div>
+								<div class="flex__item">2</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="container">
+				<h2>Выравнивание текста</h2>
+				<div class="info__inner">
+					<aside class="info__aside">
+						<div class="info__aside-inner">
+							<div class="info__aside-group">
+								<h4>Направления</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/text-align-left.html">text-align: left;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/text-align-center.html"> text-align: center;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/text-align-right.html"> text-align: right;</div>
+							</div>
+						</div>
+					</aside>
+					<div class="info__inner-wrapper jsAjaxToggler">
+						<div class="info__inner-box">
+							<h3>text-align: left;</h3>
+							<div class="info__inner-items">
+								<div class="text__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, deleniti dolorum ipsam vel dicta eligendi laudantium omnis vitae esse deserunt reprehenderit eaque labore nam, nisi quas odit dolor, a quod.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="container">
+				<h2>Grid сетка</h2>
+				<div class="info__inner">
+					<aside class="info__aside">
+						<div class="info__aside-inner">
+							<div class="info__aside-group">
+								<h4>Построение сетки</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/grid-2-2.html">grid-template-columns: repeat(2, 2fr);</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/grid-4-1.html"> grid-template-columns: repeat(4, 1fr);</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/grid-3-1.html"> grid-template-columns: repeat(3, 1.333fr);</div>
+							</div>
+							<div class="info__aside-group">
+								<h4>Колчичество занимаемых колонок</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/span-2.html">grid-column: span 2;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/span-3.html">grid-column: span 3;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/span-4.html">grid-column: span 4;</div>
+							</div>
+							<div class="info__aside-group">
+								<h4>Колчичество занимаемых строк</h4>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/row-2.html">grid-row: span 2;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/row-3.html">grid-row: span 3;</div>
+								<div class="info__aside-item jsAsideItem" data-ajax="ajax/row-4.html">grid-row: span 4;</div>
+							</div>
+						</div>
+					</aside>
+					<div class="info__inner-wrapper jsAjaxToggler">
+						<div class="info__inner-box">
+							<h3>display: grid; grid-template-columns: repeat(2, 2fr); gap: 30px;</h3>
+							<div class="info__inner-items grid">
+								<div class="grid__item">1</div>
+								<div class="grid__item">2</div>
+								<div class="grid__item">3</div>
+								<div class="grid__item">4</div>
+								<div class="grid__item">5</div>
+								<div class="grid__item">6</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer"></footer>
+	<script src="js/jquery-3.6.1.js"></script>
+	<script src="js/fancybox.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/main.js">   </script>
+</body>
+
+</html>
