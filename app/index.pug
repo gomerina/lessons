@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+    head
+        include includes/head
+        title Шпаргалка
+    body 
+        include includes/header
+        main 
+            h1 Подсказки для вёрстки
+            section.info 
+                .container 
+                    h2 Flexbox
+                    .info__inner
+                        aside.info__aside 
+                            .info__aside-inner
+                                .info__aside-group
+                                    h4 Выравнивание по вертикали
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/align-items-start.html") align-items: flex-start;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/align-items-center.html")  align-items: center; 
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/align-items-end.html")  align-items: flex-end;
+                                .info__aside-group
+                                    h4 Выравнивание по горизонтали
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/justify-content-start.html") justify-content: flex-start;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/justify-content-center.html")  justify-content: center; 
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/justify-content-end.html")  justify-content: flex-end;
+                        .info__inner-wrapper.jsAjaxToggler
+                            .info__inner-box
+                                h3 display: flex; gap: 30px;
+                                .info__inner-items.flex
+                                    .flex__item 1
+                                    .flex__item.highest 2
+                                    .flex__item 3
+                                    .flex__item 4
+            section.info 
+                .container 
+                    h2 Flexbox направления
+                    .info__inner
+                        aside.info__aside 
+                            .info__aside-inner
+                                .info__aside-group
+                                    h4 Направления
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/flex-direction-row.html") flex-direction: row;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/flex-direction-row-reverse.html") flex-direction: row-reverse;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/flex-direction-column.html")  flex-direction: column;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/flex-direction-column-reverse.html")  flex-direction: column-reverse;
+                        .info__inner-wrapper.jsAjaxToggler
+                            .info__inner-box
+                                h3 display: flex; gap: 30px;
+                                .info__inner-items.flex
+                                    .flex__item 1
+                                    .flex__item 2
+            section.info 
+                .container 
+                    h2 Выравнивание текста
+                    .info__inner
+                        aside.info__aside 
+                            .info__aside-inner
+                                .info__aside-group
+                                    h4 Направления
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/text-align-left.html") text-align: left;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/text-align-center.html")  text-align: center;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/text-align-right.html")  text-align: right;
+                        .info__inner-wrapper.jsAjaxToggler
+                            .info__inner-box
+                                h3 text-align: left;
+                                .info__inner-items
+                                    .text__item Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, deleniti dolorum ipsam vel dicta eligendi laudantium omnis vitae esse deserunt reprehenderit eaque labore nam, nisi quas odit dolor, a quod.
+            section.info 
+                .container 
+                    h2 Grid сетка
+                    .info__inner
+                        aside.info__aside 
+                            .info__aside-inner
+                                .info__aside-group
+                                    h4 Построение сетки
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/grid-2-2.html") grid-template-columns: repeat(2, 2fr);
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/grid-4-1.html")  grid-template-columns: repeat(4, 1fr);
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/grid-3-1.html")  grid-template-columns: repeat(3, 1.333fr);
+                                .info__aside-group
+                                    h4 Колчичество занимаемых колонок
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/span-2.html") grid-column: span 2;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/span-3.html") grid-column: span 3;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/span-4.html") grid-column: span 4;
+                                .info__aside-group
+                                    h4 Колчичество занимаемых строк
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/row-2.html") grid-row: span 2;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/row-3.html") grid-row: span 3;
+                                    .info__aside-item.jsAsideItem(data-ajax="ajax/row-4.html") grid-row: span 4;
+                                    
+                        .info__inner-wrapper.jsAjaxToggler
+                            .info__inner-box
+                                h3 display: grid; grid-template-columns: repeat(2, 2fr); gap: 30px;
+                                .info__inner-items.grid
+                                    .grid__item 1
+                                    .grid__item 2
+                                    .grid__item 3
+                                    .grid__item 4
+                                    .grid__item 5
+                                    .grid__item 6
+                
+
+                                   
+                        
+
+        
+        
+        
+        
+        
+        
+        
+        include includes/footer

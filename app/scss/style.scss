@@ -1,0 +1,137 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+.container {
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+    background: #fff;
+    z-index: 200;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 66px;
+    margin: 100px 0 0px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: 600;
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.info__aside {
+    width: 400px;
+    padding: 20px;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+}
+
+.info__aside-item {
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid black;
+    transition: .3s ease-in-out;
+    font-size: 16px;
+
+    &.active {
+        background: black;
+        color: #fff;
+    }
+
+    &:not(:last-child) {
+        margin: 0 0 15px 0;
+    }
+}
+
+.info__inner-items.flex {
+    display: flex;
+    gap: 30px;
+}
+
+.info__inner-items.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.flex__item {
+    height: 200px;
+    width: 250px;
+    border: 1px solid gold;
+    box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.highest {
+        height: 300px;
+    }
+}
+
+.info__aside-group {
+    margin: 0 0 30px 0;
+}
+
+.info__inner-wrapper {
+    width: 100%;
+}
+
+.grid__item {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background: #fff;
+    border: 1px solid gold;
+    box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+}
